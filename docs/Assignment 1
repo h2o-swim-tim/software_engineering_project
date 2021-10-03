@@ -1,11 +1,21 @@
-IDEA 1:
+IDEA 1: Spotify playlist based on hours logged in Google Calendar
+
+We will pull information about the next day on Google Calendar regarding the number of hours the user is busy. Based on the number of hours the next day, a formula 
+will be developed to determine the amount of hours the user should study/work for that day. A playlist on Spotify will be created of the determined length with
+appropriate songs.
+
+APIs: https://www.programmableweb.com/api/google-calendar https://www.programmableweb.com/api/spotify-web
 
 
 
 
 
+IDEA 2: Women-owned businesses will be cross referenced with Yelp
 
+We will cross check Boston's women-owned businessees with their Yelp pages. This will help support women-owned businesses that are highly rated on Yelp, as well 
+as give users a way to make an informed decision. The user will have the ability to choose which category of business they want to see or a curated list will be 
+provided.
 
-IDEA2:
+APIs: https://www.programmableweb.com/api/yelp-fusion  https://data.boston.gov/dataset/women-owned-businesses
 
 
