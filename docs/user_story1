@@ -1,0 +1,9 @@
+User's first time login
+
+There will be two ways to login for the first time: one for those with both Spotify and Google accounts, and one for those with only Google accounts (in which
+the app can direct the user to create their own free Spotify account to save the curated playlists). The user will also have the option to sign in to Spotify 
+as well so that the playlists can be saved to their personal accounts. We will be using each API's authentication and permission 
+requirements. Google will ask the user to accept sharing permissions with the entire Google account for the calendar and an authentication email can 
+be sent to the email registered. The calendar will be remembered so that this process will only be performed on the first time logging in. In case 
+the process fails, the user can restart their initial login – whether the reason be forgotten passwords (so that the user can use Google's password recovery
+features) or internet connection issues. 
