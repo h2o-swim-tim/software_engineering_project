@@ -1,0 +1,8 @@
+User's subsequent login
+
+After the initial login, the user's Google acccount will be remembered to be used as the primary login. The user will have the option to "remember me" for 
+for subsequent logins to automatically log in. Since our app is directly linked to Google accounts, a password change through the Google account will directly 
+affect the password for our third-party application. Similarly, if the user deletes their account, they will no longer be able to login in to our application. 
+If login fails multiple times, Google will lock the account for fear of compromisation and there will be a period where no one can log in; this will affect 
+the application as well and the user will have to wait for as long as their account is locked. The user only has to log in to Spotify on their initial login and
+that information will be safely stored in our app, only having to login to Spotify account again if connecting to the account fails.
