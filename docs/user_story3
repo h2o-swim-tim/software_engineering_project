@@ -1,0 +1,35 @@
+User Story 3: A user who is not logged into Spotify but is logged into Google is creating a playlist
+
+
+
+
+
+The user goes into the application and is logged into Google, but not Spotify. They will choose a "Create New Playlist" button. 
+
+
+This will begin the process to access the user's Google calendar for the following day (beginning at 12:00am and ending at 11:59pm).
+
+
+The application will add up the total time of their events.
+
+
+The application will ask the user what mood they want their playlist to be (TBD).
+
+
+Using the mood information, the application will create a playlist within their account of songs within that genre that reaches the total time of events (within a certain margin of error in minutes).
+
+
+The playlist will be named by the application and be in the form of (mm/dd - mood).
+
+
+This playlist will be created in an account owned by the application, and a sharing link to the playlist will be given.
+
+Because we do not want an extremely large number of playlists being created and stored by the account, we will have a setting where they can select how long they'd like to keep the playlist saved for (with a limit of perhaps a week).
+
+If the user would like to keep the playlist for longer than a week, we will direct them to sign in with Spotify. 
+
+If they sign in from that page with Spotify, we will create the same playlist on their account.
+
+We will have a success message for the user along the lines of "your playlist is ready!"
+
+If the process fails, we will give them an error and ask them to create the playlist again
