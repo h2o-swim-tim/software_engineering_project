@@ -16,7 +16,7 @@
     <span class="navbar-brand mb-0 h1">CS411 Spotify Browser</span>
     </nav>
     <div class="jumbotron ">
-    <h3 class="text-center">SPOTIFY : TOP 10 SONGS OF ARTIST </h3>
+    <h3 class="text-center">SPOTIFY : TOP SONGS OF ARTIST [HANS ZIMMER] </h3>
     </div>
 
 
@@ -25,10 +25,10 @@
     <form method="post">
       {% csrf_token %}
       <div class="form-group row">
-        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Input Artist URI</label>
-        <div class="col-sm-10">
-          <input name="uri" type="" class="form-control form-control-lg" id="colFormLabelLg" placeholder="type uri">
-          <button type="submit" class="btn btn-success btn-lg mt-1">submit</button>
+        <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg">Create playlist with number of HOURS!                                         </label>
+        <div class="col-sm-4">
+          <input name="num" type="" class="form-control form-control-lg" id="colFormLabelLg" placeholder="type number">
+          <button type="submit" class="btn btn-success btn-lg mt-1">Create</button>
         </div>
       </div>
     </form>
