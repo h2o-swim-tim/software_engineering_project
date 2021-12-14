@@ -12,42 +12,41 @@
   </head>
   <body>
       <!-- As a heading -->
-    <nav class="navbar navbar-dark bg-primary">
-    <span class="navbar-brand mb-0 h1">CS411 Spotify Browser</span>
-    </nav>
-    <div class="jumbotron ">
-    <h3 class="text-center">SPOTIFY : TOP SONGS OF ARTIST [HANS ZIMMER] </h3>
-    </div>
-
-
-
-    <div class="container">
-    <form method="post">
-      {% csrf_token %}
-      <div class="form-group row">
-        <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg">Create playlist with number of HOURS!                                         </label>
-        <div class="col-sm-4">
-          <input name="num" type="" class="form-control form-control-lg" id="colFormLabelLg" placeholder="type number">
-          <button type="submit" class="btn btn-success btn-lg mt-1">Create</button>
+      <nav class="navbar navbar-dark bg-primary">
+        <span class="navbar-brand mb-0 h1">CS411 Spotify Browser</span>
+        </nav>
+        <div class="jumbotron ">
+        <h3 class="text-center">SPOTIFY : TOP DEEP FOCUS SONGS </h3>
         </div>
-      </div>
-    </form>
-    <hr>
-    </div>
 
+
+
+        <div class="container">
+          <form method="post">
+            {% csrf_token %}
+            <div class="form-group row">
+              <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg">Create playlist with number of HOURS!                                         </label>
+              <div class="col-sm-4">
+                <input name="num" type="" class="form-control form-control-lg" id="colFormLabelLg" placeholder="type number">
+                <button type="submit" class="btn btn-success btn-lg mt-1">Create</button>
+              </div>
+            </div>
+          </form>
+          <hr>
+          </div>
 
     {% if results %}
     <div class="container bg-dark p-2">
     {% for x in results %}
     <ol class="list-group mt-1">
-      <li class="list-group-item bg-info text-center"><h3 class="text-white" >{{x.name}}</h3></li>
-      <li class="list-group-item"><img src="{{x.album.images.0.url}}" class="img-fluid img-thumbnail" alt=""></li>
+      <li class="list-group-item bg-info text-center"><h3 class="text-white" >{{x.track.name}}</h3></li>
+      <li class="list-group-item"><img src="{{x.track.album.images.0.url}}" class="img-fluid img-thumbnail" alt=""></li>
     </ol><hr>
     {% endfor %}
     </div>
      {% endif %}
 
-
+    <a href = "logout">Logout</a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

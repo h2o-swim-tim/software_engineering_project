@@ -4,5 +4,7 @@ from django.contrib.auth.views import LogoutView
 
 
 urlpatterns = [
-    path('', views.index,name='index'),
+    path('/spotify', views.index,name='index'),
+    path('', views.cal_index,name = 'cal_index'),
+    path('/logout', LogoutView.as_view())
 ]
